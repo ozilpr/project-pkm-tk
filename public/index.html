@@ -16,12 +16,17 @@
     />
 
     <!-- Template Main CSS File -->
-    <!-- <link href="assets/css/assets.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="./css/output.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <script>
+      window.addEventListener(
+        "hashchange",
+        () => window.history.pushState({}, "", "/"),
+        {}
+      );
+    </script> -->
   </head>
   <body>
     <div>
@@ -37,27 +42,27 @@
               >
                 <a
                   href="#"
-                  class="hide-link p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  class="p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
                   >Halaman Utama</a
                 >
                 <a
                   href="#sambutan"
-                  class="hide-link p-1 y-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  class="p-1 y-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
                   >Sambutan</a
                 >
                 <a
                   href="#visimisi"
-                  class="hide-link p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  class="p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
                   >Visi & Misi</a
                 >
                 <a
                   href="#galeri"
-                  class="hide-link p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  class="p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
                   >Galeri</a
                 >
                 <a
                   href="#lokasi"
-                  class="hide-link p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  class="p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
                   >Lokasi</a
                 >
               </div>
@@ -91,7 +96,7 @@
               <a
                 href="#topmain"
                 onclick="hideNavbar()"
-                class="hide-link block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                class="block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
                 >Halaman Utama</a
               >
             </li>
@@ -99,7 +104,7 @@
               <a
                 href="#sambutan"
                 onclick="hideNavbar()"
-                class="hide-link block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                class="js-scroll-trigger block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
                 >Sambutan</a
               >
             </li>
@@ -107,7 +112,7 @@
               <a
                 href="#visimisi"
                 onclick="hideNavbar()"
-                class="hide-link block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                class="js-scroll-trigger block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
                 >Visi & Misi</a
               >
             </li>
@@ -115,7 +120,7 @@
               <a
                 href="#galeri"
                 onclick="hideNavbar()"
-                class="hide-link block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                class="js-scroll-trigger block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
                 >Galeri</a
               >
             </li>
@@ -123,7 +128,7 @@
               <a
                 href="#lokasi"
                 onclick="hideNavbar()"
-                class="hide-link block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                class="block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
                 >Lokasi</a
               >
             </li>
@@ -604,19 +609,6 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
-    <script>
-      let hidelink = document.querySelector(".hide-link");
-      hidelink.addEventListener("click", () => {
-        hide();
-      });
-      function hide() {
-        window.addEventListener(
-          "hashchange",
-          () => window.history.pushState({}, "", "/"),
-          {}
-        );
-      }
     </script>
   </body>
 </html>
