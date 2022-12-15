@@ -37,27 +37,27 @@
               >
                 <a
                   href="#"
-                  class="p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  class="hide-link p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
                   >Halaman Utama</a
                 >
                 <a
                   href="#sambutan"
-                  class="p-1 y-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  class="hide-link p-1 y-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
                   >Sambutan</a
                 >
                 <a
                   href="#visimisi"
-                  class="p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  class="hide-link p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
                   >Visi & Misi</a
                 >
                 <a
                   href="#galeri"
-                  class="p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  class="hide-link p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
                   >Galeri</a
                 >
                 <a
                   href="#lokasi"
-                  class="p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  class="hide-link p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
                   >Lokasi</a
                 >
               </div>
@@ -91,7 +91,7 @@
               <a
                 href="#topmain"
                 onclick="hideNavbar()"
-                class="block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                class="hide-link block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
                 >Halaman Utama</a
               >
             </li>
@@ -99,7 +99,7 @@
               <a
                 href="#sambutan"
                 onclick="hideNavbar()"
-                class="js-scroll-trigger block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                class="hide-link block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
                 >Sambutan</a
               >
             </li>
@@ -107,7 +107,7 @@
               <a
                 href="#visimisi"
                 onclick="hideNavbar()"
-                class="js-scroll-trigger block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                class="hide-link block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
                 >Visi & Misi</a
               >
             </li>
@@ -115,7 +115,7 @@
               <a
                 href="#galeri"
                 onclick="hideNavbar()"
-                class="js-scroll-trigger block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                class="hide-link block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
                 >Galeri</a
               >
             </li>
@@ -123,7 +123,7 @@
               <a
                 href="#lokasi"
                 onclick="hideNavbar()"
-                class="block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                class="hide-link block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
                 >Lokasi</a
               >
             </li>
@@ -606,11 +606,17 @@
       AOS.init();
     </script>
     <script>
-      window.addEventListener(
-        "hashchange",
-        () => window.history.pushState({}, "", "/"),
-        {}
-      );
+      let hidelink = document.querySelector(".hide-link");
+      hidelink.addEventListener("click", () => {
+        hide();
+      });
+      function hide() {
+        window.addEventListener(
+          "hashchange",
+          () => window.history.pushState({}, "", "/"),
+          {}
+        );
+      }
     </script>
   </body>
 </html>
