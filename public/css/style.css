@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Chela+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap");
+
+#tkit {
+  font-family: "Chela One", cursive;
+}
+
+#font-add {
+  font-family: "Comfortaa", cursive;
+}
+
+#font-comic {
+  font-family: "Comic Neue", cursive;
+}
+
+#card-sambutan {
+  min-width: 363px;
+}
+#text-sambutan {
+  min-width: 363px;
+}
+
+@media only screen and (max-width: 768px) {
+  #font-add {
+    font-size: 24x;
+  }
+
+  #visimisi {
+    padding-top: 72px;
+  }
+
+  #card-resp {
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  #card-sambutan {
+    margin-top: 12px;
+    padding-top: 0;
+  }
+
+  #card-sambutan {
+    min-width: auto;
+  }
+
+  #text-sambutan {
+    min-width: auto;
+  }
+
+  #galeri-resp {
+    padding: 0 10px;
+  }
+  .font-resp {
+    font-size: 24px;
+  }
+  .map-res {
+    width: 100%;
+  }
+  .container-map {
+    padding: 1rem;
+  }
+}

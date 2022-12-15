@@ -1,0 +1,617 @@
+<!--
+  note: 
+  CUKUP EDIT SECTION MASING-MASING SESUAI PEMBAGIAN TUGAS
+-->
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>TKIT Nurul Jannah</title>
+    <meta content="" name="description" />
+
+    <meta content="" name="keywords" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <!-- <link href="assets/css/assets.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="../node_modules/tw-elements/dist/js/index.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <div>
+      <!-- Navbar goes here -->
+      <nav class="fixed-top bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto h-11">
+          <div class="flex justify-center mx-auto">
+            <div class="flex space-x-7">
+              <!-- Primary Navbar items -->
+              <div
+                id="font-comic"
+                class="hidden px-4 py-1 md:flex space-x-8 text-lg whitespace-nowrap"
+              >
+                <a
+                  href="#"
+                  class="p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  >Halaman Utama</a
+                >
+                <a
+                  href="#sambutan"
+                  class="p-1 y-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  >Sambutan</a
+                >
+                <a
+                  href="#visimisi"
+                  class="p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  >Visi & Misi</a
+                >
+                <a
+                  href="#galeri"
+                  class="p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  >Galeri</a
+                >
+                <a
+                  href="#lokasi"
+                  class="p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  >Lokasi</a
+                >
+              </div>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div
+              class="absolute left-0 ml-2 top-2 md:hidden flex items-center pb-5"
+            >
+              <button class="outline-none mobile-menu-button">
+                <svg
+                  class="w-6 h-6 float-right text-gray-500 hover:text-green-500"
+                  x-show="!showMenu"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+          <ul id="font-comic" class="">
+            <li>
+              <a
+                href="#topmain"
+                onclick="hideNavbar()"
+                class="block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                >Halaman Utama</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#sambutan"
+                onclick="hideNavbar()"
+                class="js-scroll-trigger block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                >Sambutan</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#visimisi"
+                onclick="hideNavbar()"
+                class="js-scroll-trigger block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                >Visi & Misi</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#galeri"
+                onclick="hideNavbar()"
+                class="js-scroll-trigger block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                >Galeri</a
+              >
+            </li>
+            <li>
+              <a
+                href="#lokasi"
+                onclick="hideNavbar()"
+                class="block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                >Lokasi</a
+              >
+            </li>
+          </ul>
+        </div>
+        <script src="./js/btn.js"></script>
+      </nav>
+    </div>
+    <!-- main  -->
+    <div
+      id="topmain"
+      class="relative top-9 mt-1 pt-16 pb-32 flex content-center items-center justify-center mb-10"
+      style="min-height: 80vh"
+    >
+      <div
+        class="absolute top-0 w-full h-full bg-center bg-cover"
+        style="background-image: url('./img/bg.jpg')"
+      >
+        <span
+          id="blackOverlay"
+          class="w-full h-full absolute opacity-50 bg-black"
+        ></span>
+      </div>
+      <div class="container relative mx-auto">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+            <div class="px-1">
+              <h1
+                id="font-comic"
+                class="mt-4 text-2xl text-gray-300 text-center"
+              >
+                <p id="text-ketik1"></p>
+              </h1>
+              <h1 id="tkit">
+                <p
+                  id="text-ketik2"
+                  class="text-white font-semibold text-5xl"
+                ></p>
+              </h1>
+              <script src="./js/ketik.js"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+        style="height: 70px"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-gray-300 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+    </div>
+    <!-- ini informasi mengenai TK, bagian maulana -->
+    <section class="pb-20 bg-gray-300 -mt-24">
+      <section class="pt-10">
+        <div id="sambutan" class="mt-11 pt-11">
+          <div data-aos="fade-down" class="mx-auto text-center py-4 pt-7">
+            <p id="font-add" class="text-3xl">Sambutan</p>
+          </div>
+          <div class="flex flex-wrap items-center">
+            <div id="text-sambutan" class="w-full md:w-2/5 px-1 mx-auto">
+              <div data-aos="fade-down-right" class="mx-4">
+                <img class="w-16 h-16 rotate-6" src="./img/flower.png" alt="" />
+              </div>
+              <h3
+                data-aos="fade-up-right"
+                class="text-xl px-4 mb-2 font-semibold leading-normal"
+              >
+                Assalamu'alaikum warahmatullahi wabarakatuh
+              </h3>
+              <div class="text-justify px-4">
+                <p
+                  data-aos="fade-up"
+                  class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
+                >
+                  Alhamdulillah, Puji syukur kehadirat Allah SWT yang telah
+                  melimpahkan begitu banyak nikmat kepada kita semua. Tentunya
+                  salah satu nikmat yang banyak adalah bisa menyaksikan
+                  perkembangan anak-anak kita dari lahir hingga sekarang.
+                </p>
+                <p
+                  data-aos="fade-up"
+                  class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700"
+                >
+                  Sebagai bentuk rasa syukur kami kepada Allah SWT, bersama-sama
+                  kami membimbing anak-anak kami untuk tumbuh dan berkembang,
+                  dewasa dan akhirnya dewasa.
+                </p>
+                <p
+                  data-aos="fade-up"
+                  class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700"
+                >
+                  Taman Kanak-Kanak Islam Terpadu (TKIT) Nurul Jannah selalu
+                  berusaha menjadi mitra orang tua untuk membimbing perkembangan
+                  anak-anak kita sejak awal.
+                </p>
+                <p
+                  data-aos="fade-up"
+                  class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700"
+                >
+                  Alhamdulillah jumlah murid semakin meningkat dari tahun ke
+                  tahun, yang menunjukkan bahwa bapak dan ibu mempercayakan TK
+                  Islam Al Syukro sebagai orang tua. Sebagai pendidik yang harus
+                  dengan penuh kasih membimbing Ananda, putra-putri ayah dan
+                  ibumu, kami berusaha untuk melestarikan kepercayaan ini.
+                </p>
+                <p
+                  data-aos="fade-up"
+                  class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700"
+                >
+                  Bagi bapak ibu yang masih mencari Taman Kanak-Kanak untuk
+                  anaknya, kami menerima kepercayaan bapak ibu dengan tangan
+                  terbuka. Dengan segala daya yang kami miliki, kami diberi
+                  amanah dan wewenang untuk membesarkan anak-anak bapak dan ibu.
+                </p>
+                <p
+                  data-aos="fade-up"
+                  class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700"
+                >
+                  Selamat datang dan menjadi keluarga besar TKIT Nurul Jannah.
+                </p>
+              </div>
+            </div>
+            <div
+              id="card-sambutan"
+              class="w-full self-start mt-8 pt-10 md:w-2/5 px-4 mx-auto"
+            >
+              <div
+                data-aos="fade-up-left"
+                class="relative w-4/5 mx-auto flex flex-col break-words bg-white mb-6 shadow-lg rounded-lg bg-pink-400"
+              >
+                <img
+                  alt="..."
+                  src="./img/default.jpg"
+                  class="w-full align-middle rounded-t-lg"
+                />
+                <blockquote class="relative p-8 mb-4">
+                  <svg
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 583 95"
+                    class="absolute left-0 w-full block"
+                    style="height: 95px; top: -94px"
+                  >
+                    <polygon
+                      points="-30,95 583,95 583,65"
+                      class="text-pink-400 fill-current"
+                    ></polygon>
+                  </svg>
+                  <h4
+                    id="font-comic"
+                    class="text-center md\:text-4xl text-xl font-bold text-white"
+                  >
+                    Kepala Sekolah TKIT Nurul Jannah
+                  </h4>
+                  <p
+                    id="font-comic"
+                    class="text-center md\:text-4xl text-2xl font-weight-bold font-light mt-2 text-white"
+                  >
+                    Wiwi Karyati, S.Pd.
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container mx-auto px-4">
+        <div id="font-comic" class="flex flex-wrap">
+          <div
+            id="visimisi"
+            class="md\:text-4xl text-xl mt-11 pt-11 mb-4 mx-auto text-center"
+          >
+            <div data-aos="fade-down" class="mx-auto text-center py-4 pt-7">
+              <p id="font-add" class="text-3xl">Visi dan Misi</p>
+            </div>
+            <div
+              data-aos="fade-up"
+              id="card-resp"
+              class="relative font-resp flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+            >
+              <div class="text-gray-600 px-4 py-5 flex-auto">
+                <!-- <div
+                  class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-pink-400"
+                >
+                  <i class="fas fa-award"></i>
+                </div> -->
+                <h6 class="text-3xl">Visi</h6>
+                <p class="mt-2 mb-4 text-2xl text-left">
+                  Mempersiapkan generasi masa depan yang sholeh, cerdas, dan
+                  berakhlak mulia
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mx-auto text-center">
+            <div
+              data-aos="fade-up"
+              id="card-resp"
+              class="relative px-4 flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+            >
+              <div
+                id=""
+                class="text-gray-600 md\:text-4xl text-xl py-5 px-4 flex-auto"
+              >
+                <!-- <div
+                  class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-cyan-400"
+                >
+                  <i class="fas fa-retweet"></i>
+                </div> -->
+                <h6 class="text-3xl">Misi</h6>
+                <div id="resp-text" class="text-left">
+                  <p class="fas mt-2 mb-4 mx-auto text-gray-600 text-2xl">
+                    1. Melaksanakan pembelajaran anak usia dini dengan
+                    menggunakan pendekatan bermain sambil belajar<br />
+                    2. Melaksanakan pembimbingan dalam membentuk perilaku yang
+                    sesuai dengan kaidah islam<br />
+                    3. Melaksanakan latihan untuk membiasakan disiplin anak
+                    dalam kehidupan sehari-hari sebagai individu dan sosial
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section -->
+
+    <section class="relative h-screen py-20">
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-white fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+
+      <div class="pt-24 text-center text-7xl">
+        <p class="">ini section kosong</p>
+        <p class="">ini section kosong</p>
+        <p class="">ini section kosong</p>
+        <p class="">ini section kosong</p>
+        <p class="">ini section kosong</p>
+        <p class="">ini section kosong</p>
+      </div>
+    </section>
+
+    <!-- galeri foto yang menunjukkan kegiatan-kegiatan yang 
+    dilakukan oleh anak2 di TK, bagian ozil -->
+    <section id="galeri" class="relative py-20">
+      <div data-aos="fade-down" class="mx-auto text-center py-4">
+        <p id="font-add" class="text-3xl">Galeri</p>
+      </div>
+
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="2000"
+        id="galeri-resp"
+        class="container mx-auto w-full"
+      >
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide relative mx-auto w-4/5"
+          data-bs-ride="carousel"
+        >
+          <div
+            class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4"
+          >
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner relative overflow-hidden">
+            <div class="carousel-item active relative float-left w-full">
+              <img
+                src="./img/gal1.jpg"
+                class="block w-full h-96 rounded-lg object-cover"
+                alt="..."
+              />
+              <div
+                class="carousel-caption hidden md:block absolute text-center"
+              ></div>
+            </div>
+            <div class="carousel-item relative float-left w-full">
+              <img
+                src="./img/gal2.jpg"
+                class="block w-full h-96 rounded-lg object-cover"
+                alt="..."
+              />
+              <div
+                class="carousel-caption hidden md:block absolute text-center"
+              ></div>
+            </div>
+            <div class="carousel-item relative float-left w-full">
+              <img
+                src="./img/gal4.jpg"
+                class="block w-full h-96 rounded-lg object-cover"
+                alt="..."
+              />
+              <div
+                class="carousel-caption hidden md:block absolute text-center"
+              ></div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon inline-block bg-no-repeat"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon inline-block bg-no-repeat"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div data-aos="fade-up" class="mx-auto text-center pt-7 mb-7">
+        <p class="">
+          <a
+            id="font-comic"
+            href="./galeri.html"
+            class="text-2xl bg-transparent hover:bg-pink-400 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-pink-500 hover:border-transparent rounded"
+            >Lihat Galeri</a
+          >
+        </p>
+      </div>
+    </section>
+    <section id="lokasi" class="pb-24 h-screen relative block bg-gray-900">
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-gray-900 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <div data-aos="fade-up" class="">
+        <div class="mx-auto text-center pt-24 py-4 mt-14">
+          <p id="font-add" class="text-3xl text-white">Lokasi</p>
+        </div>
+      </div>
+      <div data-aos="flip-left" data-aos-duration="2000" class="container-map">
+        <a
+          href="https://www.google.com/maps?ll=-6.25901,107.11452&z=16&t=m&hl=id&gl=ID&mapclient=embed&cid=12441317089788186206"
+          class="flex flex-col my-1 mx-auto items-center bg-white border rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+        >
+          <iframe
+            class="map-res"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0358336064533!2d107.1145201!3d-6.2590103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6985c00930bb99%3A0xaca86ff9ead24e5e!2sTKIT%20Nurul%20Jannah!5e0!3m2!1sid!2sid!4v1670755218912!5m2!1sid!2sid"
+            width="425"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div
+            id="font-add"
+            class="flex flex-col justify-between p-4 leading-normal"
+          >
+            <h5
+              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            >
+              Alamat
+            </h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Perum Telaga Murni Blok C 25 No.23, RT. 05 RW. 05, Kel.
+              Telagamurni, Kec. Cikarang Barat, Kab. Bekasi, Prov. Jawa Barat
+              17530
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- section footer  -->
+    <section class="footer">
+      <footer class="bg-gray-100 text-center lg:text-left pt-7">
+        <div class="container p-6 text-gray-800 mx-auto">
+          <div class="grid lg:grid-cols-2 gap-4">
+            <div class="mb-6 md:mb-0">
+              <h5 class="font-medium mb-2 uppercase">Footer text</h5>
+
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+                atque ea quis molestias. Fugiat pariatur maxime quis culpa
+                corporis vitae repudiandae aliquam voluptatem veniam, est atque
+                cumque eum delectus sint!
+              </p>
+            </div>
+
+            <div class="mb-6 md:mb-0">
+              <h5 class="font-medium mb-2 uppercase">Footer text</h5>
+
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+                atque ea quis molestias. Fugiat pariatur maxime quis culpa
+                corporis vitae repudiandae aliquam voluptatem veniam, est atque
+                cumque eum delectus sint!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="text-center text-gray-700 p-4"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          Powered by
+          <a class="text-gray-800" href="https://github.com/ozilpr">ozilpr</a>
+        </div>
+      </footer>
+    </section>
+    <!-- end section -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
