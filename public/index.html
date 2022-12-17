@@ -200,7 +200,7 @@
         <div id="sambutan" class="mt-11 pt-11">
           <div
             data-aos="fade-left"
-            data-aos-duration="1000"
+            data-aos-duration="500"
             class="mx-auto text-center py-4 pt-7"
           >
             <p id="font-add" class="text-3xl">Sambutan</p>
@@ -321,23 +321,18 @@
           >
             <div
               data-aos="fade-left"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               class="mx-auto text-center py-4"
             >
               <p id="font-add" class="text-3xl">Visi dan Misi</p>
             </div>
             <div
               data-aos="fade-up"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               id="card-resp"
               class="relative font-resp flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
             >
               <div class="text-gray-600 px-4 py-5 flex-auto">
-                <!-- <div
-                  class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-pink-400"
-                >
-                  <i class="fas fa-award"></i>
-                </div> -->
                 <h6 class="text-3xl">Visi</h6>
                 <p class="mt-2 mb-4 text-2xl text-left">
                   Mempersiapkan generasi masa depan yang sholeh, cerdas, dan
@@ -356,11 +351,6 @@
                 id=""
                 class="text-gray-600 md\:text-4xl text-xl py-5 px-4 flex-auto"
               >
-                <!-- <div
-                  class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-cyan-400"
-                >
-                  <i class="fas fa-retweet"></i>
-                </div> -->
                 <h6 class="text-3xl">Misi</h6>
                 <div id="resp-text" class="text-left">
                   <p class="fas mt-2 mb-4 mx-auto text-gray-600 text-2xl">
@@ -411,7 +401,7 @@
     <section id="galeri" class="relative py-20">
       <div
         data-aos="fade-right"
-        data-aos-duration="2000"
+        data-aos-duration="500"
         class="mx-auto text-center py-4"
       >
         <p id="font-add" class="text-3xl">Galeri</p>
@@ -419,7 +409,7 @@
 
       <div
         data-aos="zoom-in"
-        data-aos-duration="2000"
+        data-aos-duration="500"
         id="galeri-resp"
         class="container mx-auto w-full"
       >
@@ -522,7 +512,7 @@
       </div>
       <script src="../node_modules/tw-elements/dist/js/index.min.js"></script>
     </section>
-    <section id="lokasi" class="pb-24 relative block bg-gray-900">
+    <section id="lokasi" class="pb-24 relative block bg-pink-400">
       <div
         class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
         style="height: 80px"
@@ -537,20 +527,27 @@
           y="0"
         >
           <polygon
-            class="text-gray-900 fill-current"
+            class="text-pink-400 fill-current"
             points="2560 0 2560 100 0 100"
           ></polygon>
         </svg>
       </div>
-      <div data-aos="fade-left" data-aos-duration="2000" class="">
+      <div class="">
         <div class="mx-auto text-center pt-24 py-4 mt-14">
-          <p id="font-add" class="text-3xl text-white">Lokasi</p>
+          <p
+            id="font-add"
+            data-aos="fade-left"
+            data-aos-duration="500"
+            class="text-3xl text-white"
+          >
+            Lokasi
+          </p>
         </div>
       </div>
-      <div data-aos="flip-left" data-aos-duration="2000" class="container-map">
+      <div data-aos="flip-left" data-aos-duration="1000" class="container-map">
         <a
           href="https://www.google.com/maps?ll=-6.25901,107.11452&z=16&t=m&hl=id&gl=ID&mapclient=embed&cid=12441317089788186206"
-          class="flex flex-col my-1 mx-auto items-center bg-white border rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+          class="flex flex-col my-1 mx-auto items-center border-2 rounded-lg shadow-md md:flex-row md:max-w-xl border-gray-200 hover:bg-pink-300 bg-pink-400"
         >
           <iframe
             class="map-res"
@@ -566,12 +563,10 @@
             id="font-add"
             class="flex flex-col justify-between p-4 leading-normal"
           >
-            <h5
-              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-            >
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
               Alamat
             </h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p class="mb-3 font-normal text-gray-100">
               Perum Telaga Murni Blok C 25 No.23, RT. 05 RW. 05, Kel.
               Telagamurni, Kec. Cikarang Barat, Kab. Bekasi, Prov. Jawa Barat
               17530
@@ -584,33 +579,34 @@
     <section class="footer">
       <footer class="bg-gray-100 text-center lg:text-left pt-7">
         <div class="container p-6 text-gray-800 mx-auto">
-          <div class="grid lg:grid-cols-2 gap-4">
+          <div id="font-comic" class="grid lg:grid-cols-2 gap-4">
             <div class="mb-6 md:mb-0">
-              <h5 class="font-medium mb-2 uppercase">Footer text</h5>
-
-              <p class="mb-4">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-                atque ea quis molestias. Fugiat pariatur maxime quis culpa
-                corporis vitae repudiandae aliquam voluptatem veniam, est atque
-                cumque eum delectus sint!
-              </p>
+              <h5 class="font-medium mb-2">Kontak</h5>
+              <div class="mb-4">
+                <p>Fax : 02189106417</p>
+                <p>Telepon : 0218900167</p>
+                <p>Email : yanurjansitkit@gmail.com</p>
+              </div>
             </div>
 
             <div class="mb-6 md:mb-0">
-              <h5 class="font-medium mb-2 uppercase">Footer text</h5>
+              <h5 class="font-medium mb-2 uppercase"></h5>
 
               <p class="mb-4">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-                atque ea quis molestias. Fugiat pariatur maxime quis culpa
-                corporis vitae repudiandae aliquam voluptatem veniam, est atque
-                cumque eum delectus sint!
+                Kementerian Pembina : Kementerian Pendidikan, Kebudayaan, Riset,
+                dan Teknologi Naungan : NPYP : - No. SK. Pendirian :
+                004/YANURJANSI/IV/2006 Tanggal SK. Pendirian : 21-04-2006 Nomor
+                SK Operasional : 503.15/107-XII/SK-TK/BPPT/2011 Tanggal SK
+                Operasional : 13-12-2011 File SK Operasional : Lihat SK
+                Operasional Tanggal Upload SK Op. : 2017-10-23 07:43:24.540
+                Akreditasi : B
               </p>
             </div>
           </div>
         </div>
 
         <div
-          class="text-center text-gray-700 p-4"
+          class="text-center text-gray-700 p-1"
           style="background-color: rgba(0, 0, 0, 0.2)"
         >
           Powered by
