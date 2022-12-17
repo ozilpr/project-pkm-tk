@@ -1,10 +1,25 @@
-#font-comic {
+#font-comics {
   font-family: "Comic Neue", cursive;
 }
 
 #font-add {
   font-family: "Comfortaa", cursive;
 }
+
+@media only screen and (max-width: 768px) {
+  .font-resp {
+    font-size: 24px;
+  }
+
+  .font-comics {
+    font-size: 24px;
+  }
+
+  .font-add {
+    font-size: 24px;
+  }
+}
+
 body {
   background-color: #eee;
 }
@@ -77,7 +92,7 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
   }
 }
-@-moz-keyframes zoomin {
+/* @-moz-keyframes zoomin {
   0% {
     max-width: 50%;
     transform: rotate(-30deg);
@@ -152,4 +167,4 @@ body {
     max-width: 100%;
     transform: rotate(0deg);
   }
-}
+} */
