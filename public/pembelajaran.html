@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>TKIT Nurul Jannah</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="shortcut icon" href="./icon/favicon.ico" />
+  </head>
+  <body>
+    <div>
+      <!-- Navbar goes here -->
+      <nav class="fixed-top bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto h-11">
+          <div class="flex justify-center mx-auto">
+            <div class="flex space-x-7">
+              <!-- Primary Navbar items -->
+              <div
+                id="font-comic"
+                class="hidden px-4 py-1 md:flex space-x-8 text-lg whitespace-nowrap"
+              >
+                <a
+                  href="./index.html"
+                  class="p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  >Halaman Utama</a
+                >
+                <a href="" class="disabled pointer-events-none p-1 my-auto"
+                  >Pembelajaran</a
+                >
+                <a
+                  href="./fasilitas.html"
+                  class="p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  >Fasilitas</a
+                >
+                <a
+                  href="./galeri.html"
+                  class="p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  >Galeri</a
+                >
+                <a
+                  href="#lokasi"
+                  class="p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  >Lokasi</a
+                >
+              </div>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div
+              class="absolute left-0 ml-2 top-2 md:hidden flex items-center pb-5"
+            >
+              <button class="outline-none mobile-menu-button">
+                <svg
+                  class="w-6 h-6 float-right text-gray-500 hover:text-pink-500"
+                  x-show="!showMenu"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+          <ul id="font-comic" class="">
+            <li>
+              <a
+                href="./index.html"
+                onclick="hideNavbar()"
+                class="block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                >Halaman Utama</a
+              >
+            </li>
+            <li>
+              <a
+                href="./profile.html"
+                onclick="hideNavbar()"
+                class="block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                >Profile</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                onclick="hideNavbar()"
+                class="block text-sm px-2 py-4 bg-pink-400 text-white transition duration-300"
+                >Pembelajaran</a
+              >
+            </li>
+            <li>
+              <a
+                href="./fasilitas.html"
+                onclick="hideNavbar()"
+                class="block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                >Fasilitas</a
+              >
+            </li>
+            <li>
+              <a
+                href="./galeri.html"
+                onclick="hideNavbar()"
+                class="block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                >Galeri</a
+              >
+            </li>
+          </ul>
+        </div>
+        <script src="./js/btn.js"></script>
+      </nav>
+    </div>
+    <!-- main  -->
+    <div
+      id="topmain"
+      class="relative top-9 mt-1 pt-16 pb-32 flex content-center items-center justify-center mb-10"
+      style="min-height: 80vh"
+    >
+      <div
+        class="bg-main absolute top-0 w-full h-full bg-center bg-cover"
+        style="background-image: url('./img/bg.jpg')"
+      >
+        <span
+          id="blackOverlay"
+          class="bg-main w-full h-full absolute opacity-50 bg-black"
+        ></span>
+      </div>
+      <div class="container relative mx-auto">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+            <div class="px-1">
+              <h1
+                id="font-comic"
+                class="mt-4 text-2xl text-gray-300 text-center"
+              >
+                <p id="text-ketik1">Selamat Datang di Web Profile</p>
+              </h1>
+              <h1 id="tkit">
+                <p id="text-ketik2" class="text-white font-semibold text-5xl">
+                  TKIT Nurul Jannah
+                </p>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+        style="height: 70px"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-white fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+    </div>
+    <!-- main-content -->
+    <section class="relative py-20">
+      <div class="items-center mx-auto w-4/5">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="500"
+          class="mx-auto text-center py-4 pt-7"
+        >
+          <p id="font-add" class="text-3xl">Kegiatan Belajar</p>
+        </div>
+        <div id="font-add" class="relative rounded-sm">
+          <table class="w-full text-sm md:text-xl text-left text-gray-500">
+            <thead
+              data-aos="fade-up"
+              data-aos-duration="500"
+              class="text-center text-gray-900 bg-pink-300 rounded-tl-lg"
+            >
+              <tr>
+                <th scope="col" class="py-3 px-6 rounded-tl-lg">Jam</th>
+                <th scope="col" class="py-3 px-6 rounded-tr-lg">Kegiatan</th>
+              </tr>
+            </thead>
+            <tbody class="bg-pink-50 border-pink-200">
+              <tr
+                data-aos="fade-left"
+                data-aos-duration="500"
+                class="border-b border-pink-200"
+              >
+                <th
+                  scope="row"
+                  class="py-4 px-6 text-center text-gray-900 font-medium whitespace-nowrap"
+                >
+                  7.10 - 7.50
+                </th>
+                <td class="py-4 px-6">Penyambutan anak dan baca iqro</td>
+              </tr>
+              <tr
+                data-aos="fade-left"
+                data-aos-duration="500"
+                class="border-b border-pink-200"
+              >
+                <th
+                  scope="row"
+                  class="py-4 px-6 text-center text-gray-900 font-medium whitespace-nowrap"
+                >
+                  8.00 - 8.15
+                </th>
+                <td class="py-4 px-6">
+                  Baris dan diberi penyegaran bernyanyi, membaca ikrar santri,
+                  memberi cerita, membaca hafalan, memberi materi islami
+                </td>
+              </tr>
+              <tr
+                data-aos="fade-left"
+                data-aos-duration="500"
+                class="border-b border-pink-200"
+              >
+                <th
+                  scope="row"
+                  class="py-4 px-6 text-center text-gray-900 font-medium whitespace-nowrap"
+                >
+                  8.15 - 8.30
+                </th>
+                <td class="py-4 px-6">Murojaah dan invers morning, absensi</td>
+              </tr>
+              <tr
+                data-aos="fade-left"
+                data-aos-duration="500"
+                class="border-b border-pink-200"
+              >
+                <th
+                  scope="row"
+                  class="py-4 px-6 text-center text-gray-900 font-medium whitespace-nowrap"
+                >
+                  8.30 - 9.15
+                </th>
+                <td class="py-4 px-6">Kegiatan Belajar Mengajar ke 1</td>
+              </tr>
+              <tr
+                data-aos="fade-left"
+                data-aos-duration="500"
+                class="border-b border-pink-200"
+              >
+                <th
+                  scope="row"
+                  class="py-4 px-6 text-center text-gray-900 font-medium whitespace-nowrap"
+                >
+                  9.15 - 10.00
+                </th>
+                <td class="py-4 px-6">Istirahat</td>
+              </tr>
+              <tr
+                data-aos="fade-left"
+                data-aos-duration="500"
+                class="border-b border-pink-200"
+              >
+                <th
+                  scope="row"
+                  class="py-4 px-6 text-center text-gray-900 font-medium whitespace-nowrap"
+                >
+                  10.00 - 10.50
+                </th>
+                <td class="py-4 px-6">Kegiatan Belajar Mengajar ke 2</td>
+              </tr>
+              <tr data-aos="fade-left" data-aos-duration="500" class="">
+                <th
+                  scope="row"
+                  class="py-4 px-6 text-center text-gray-900 font-medium whitespace-nowrap rounded-bl-lg"
+                >
+                  10.50 - 11.00
+                </th>
+                <td class="py-4 px-6 rounded-br-lg">
+                  Evaluasi dan baca doa pulang
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="items-center mt-10 mx-auto w-4/5">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="500"
+          class="mx-auto text-center py-4 pt-7"
+        >
+          <p id="font-add" class="text-3xl">Tata Tertib</p>
+        </div>
+        <div id="font-add" class="rounded relative">
+          <table class="w-full text-sm md:text-xl text-left text-gray-900">
+            <tbody class="bg-pink-200">
+              <tr
+                data-aos="fade-left"
+                data-aos-duration="500"
+                class="border-b border-pink-100"
+              >
+                <th
+                  scope="row"
+                  class="py-4 pr-2 pl-3 text-center font-medium whitespace-nowrap rounded-tl-lg"
+                >
+                  1.
+                </th>
+                <td class="py-4 rounded-tr-lg">
+                  Guru dan siswa selalu mengenakan masker
+                </td>
+              </tr>
+              <tr
+                data-aos="fade-left"
+                data-aos-duration="500"
+                class="border-b border-pink-100"
+              >
+                <th
+                  scope="row"
+                  class="py-4 pr-2 pl-3 text-center font-medium whitespace-nowrap"
+                >
+                  2.
+                </th>
+                <td class="py-4">
+                  Sebelum masuk ruangan kelas siswa dicek suhu dengan alat
+                  <i>thermogun</i>
+                </td>
+              </tr>
+              <tr
+                data-aos="fade-left"
+                data-aos-duration="500"
+                class="border-b border-pink-100"
+              >
+                <th
+                  scope="row"
+                  class="py-4 pr-2 pl-3 text-center font-medium whitespace-nowrap"
+                >
+                  3.
+                </th>
+                <td class="py-4">
+                  Mencuci tangan dengan sabun dengan air mengalir dan memakai
+                  hand sanitizer sebelum dan sesudah belajar
+                </td>
+              </tr>
+              <tr
+                data-aos="fade-left"
+                data-aos-duration="500"
+                class="border-b border-pink-100"
+              >
+                <th
+                  scope="row"
+                  class="py-4 pr-2 pl-3 text-center font-medium whitespace-nowrap"
+                >
+                  4.
+                </th>
+                <td class="py-4">
+                  Selalu menjaga jarak, tidak berkerumun, dan tidak bersentuhan
+                </td>
+              </tr>
+              <tr
+                data-aos="fade-left"
+                data-aos-duration="500"
+                class="border-b border-pink-100"
+              >
+                <th
+                  scope="row"
+                  class="py-4 pr-2 pl-3 text-center font-medium whitespace-nowrap"
+                >
+                  5.
+                </th>
+                <td class="py-4">
+                  Melaporkan kepada guru jika merasa sakit atau tidak enak badan
+                  ketika berada di sekolah
+                </td>
+              </tr>
+              <tr
+                data-aos="fade-left"
+                data-aos-duration="500"
+                class="border-b border-pink-100"
+              >
+                <th
+                  scope="row"
+                  class="py-4 pr-2 pl-3 text-center font-medium whitespace-nowrap"
+                >
+                  6.
+                </th>
+                <td class="py-4">
+                  mengurangi aktivitas ketika di luar kegiatan pembelajaran
+                </td>
+              </tr>
+              <tr
+                data-aos="fade-left"
+                data-aos-duration="500"
+                class="border-b border-pink-100"
+              >
+                <th
+                  scope="row"
+                  class="py-4 pr-2 pl-3 text-center font-medium whitespace-nowrap"
+                >
+                  7.
+                </th>
+                <td class="py-4">
+                  menghindari aktivitas kontak fisik dengan orang lain, baik
+                  secara langsung maupun tidak langsung
+                </td>
+              </tr>
+              <tr
+                data-aos="fade-left"
+                data-aos-duration="500"
+                class="border-b border-pink-100"
+              >
+                <th
+                  scope="row"
+                  class="py-4 pr-2 pl-3 text-center font-medium whitespace-nowrap"
+                >
+                  8.
+                </th>
+                <td class="py-4">
+                  Makan dan minum bekal sendiri dan dilakukan di kelas
+                  masing-masing
+                </td>
+              </tr>
+              <tr
+                data-aos="fade-left"
+                data-aos-duration="500"
+                class="border-b border-pink-100"
+              >
+                <th
+                  scope="row"
+                  class="py-4 pr-2 pl-3 text-center font-medium whitespace-nowrap"
+                >
+                  9.
+                </th>
+                <td class="py-4">
+                  Tidak ada waktu bermain selama kegiatan belajar di sekolah,
+                  setelah kegiatan belajar langsung pulang
+                </td>
+              </tr>
+              <tr
+                data-aos="fade-left"
+                data-aos-duration="500"
+                class="border-b border-pink-100"
+              >
+                <th
+                  scope="row"
+                  class="py-4 pr-2 pl-3 text-center font-medium whitespace-nowrap"
+                >
+                  10.
+                </th>
+                <td class="py-4">
+                  Tidak ada orang tua siswa yang menunggu di sekolah
+                </td>
+              </tr>
+              <tr
+                data-aos="fade-left"
+                data-aos-duration="500"
+                class="border-b border-pink-100"
+              >
+                <th
+                  scope="row"
+                  class="py-4 pr-2 pl-3 text-center font-medium whitespace-nowrap rounded-bl-lg"
+                >
+                  11.
+                </th>
+                <td class="py-4 rounded-br-lg">
+                  Orang tua yang mengantar dan menjemput siswa harus tepat waktu
+                  dan wajib memakai masker
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- section footer  -->
+    <section class="footer">
+      <footer class="bg-gray-100 text-center lg:text-left ">
+        <div id="font-add" class="container p-6 text-gray-900 mx-auto">
+          <div
+            id="font-comic"
+            class="grid lg:grid-cols-2 gap-2 text-sm md:text-xl"
+          >
+            <table class="w-full flex mb-7 text-left">
+              <tbody class="border-none text-left">
+                <tr>
+                  <th class="col-span-2">
+                    <h5 class="font-medium px-2 mb-2">Kontak</h5>
+                  </th>
+                </tr>
+                <tr class="">
+                  <th scope="row" class="px-2 font-medium whitespace-nowrap">
+                    Fax
+                  </th>
+                  <td class="px-2">: 02189106417</td>
+                </tr>
+                <tr class="">
+                  <th scope="row" class="px-2 font-medium whitespace-nowrap">
+                    Telepon
+                  </th>
+                  <td class="px-2">: 0218900167</td>
+                </tr>
+                <tr class="">
+                  <th scope="row" class="px-2 font-medium whitespace-nowrap">
+                    Email
+                  </th>
+                  <td class="px-2">: yanurjansitkit@gmail.com</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="mb-6 md:mb-0 text-left">
+              <h5 class="font-medium px-2 mb-2">Alamat</h5>
+              <p class="mb-4 px-2">
+                Perum Telaga Murni Blok C 25 No.23, RT. 05 RW. 05, Kel.
+                Telagamurni, Kec. Cikarang Barat, Kab. Bekasi, Prov. Jawa Barat
+                17530
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="text-center text-gray-700 p-1"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          Powered by
+          <a class="text-gray-800" href="https://github.com/ozilpr">ozilpr</a>
+        </div>
+      </footer>
+    </section>
+    <!-- end section -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

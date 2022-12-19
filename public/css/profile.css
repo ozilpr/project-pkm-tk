@@ -1,0 +1,13 @@
+body {
+  background-color: #f8f4eb;
+}
+
+.svg-color {
+  color: #f8f4eb;
+}
+
+@media (max-width: 768px) {
+  img {
+    scale: 100%;
+  }
+}
