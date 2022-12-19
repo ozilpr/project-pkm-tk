@@ -1,0 +1,21 @@
+body {
+  background-color: #f8f4eb;
+}
+
+.svg-color {
+  color: #f8f4eb;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .font-profile {
+    font-size: 0.675rem;
+  }
+
+  img {
+    scale: 100%;
+  }
+}

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Struktur Organisasi TKIT Nurul Jannah</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/profile.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="shortcut icon" href="./icon/favicon.ico" />
+  </head>
+  <body>
+    <div>
+      <!-- Navbar goes here -->
+      <nav class="fixed-top bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto h-11">
+          <div class="flex justify-center mx-auto">
+            <div class="flex space-x-7">
+              <!-- Primary Navbar items -->
+              <div
+                id="font-comic"
+                class="hidden px-4 py-1 md:flex space-x-8 text-lg whitespace-nowrap"
+              >
+                <a
+                  href="./index.html"
+                  class="p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  >Halaman Utama</a
+                >
+                <a href="" class="disabled pointer-events-none p-1 my-auto"
+                  >Profile</a
+                >
+                <a
+                  href="./pembelajaran.html"
+                  class="p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  >Pembelajaran</a
+                >
+                <a
+                  href="./fasilitas.html"
+                  class="p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  >Fasilitas</a
+                >
+                <a
+                  href="./galeri.html"
+                  class="p-1 my-auto text-gray-500 font-semibold hover:text-white rounded-md hover:bg-pink-400 transition duration-300"
+                  >Galeri</a
+                >
+              </div>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div
+              class="absolute left-0 ml-2 top-2 md:hidden flex items-center pb-5"
+            >
+              <button class="outline-none mobile-menu-button">
+                <svg
+                  class="w-6 h-6 float-right text-gray-500 hover:text-pink-500"
+                  x-show="!showMenu"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+          <ul id="font-comic" class="">
+            <li>
+              <a
+                href="./index.html"
+                onclick="hideNavbar()"
+                class="block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                >Halaman Utama</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                onclick="hideNavbar()"
+                class="block text-sm px-2 py-4 bg-pink-400 text-white transition duration-300"
+                >Profile</a
+              >
+            </li>
+            <li>
+              <a
+                href="./pembelajaran.html"
+                onclick="hideNavbar()"
+                class="block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                >Pembelajaran</a
+              >
+            </li>
+            <li>
+              <a
+                href="./fasilitas.html"
+                onclick="hideNavbar()"
+                class="block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                >Fasilitas</a
+              >
+            </li>
+            <li>
+              <a
+                href="./galeri.html"
+                onclick="hideNavbar()"
+                class="block text-sm px-2 py-4 hover:bg-pink-400 transition duration-300"
+                >Galeri</a
+              >
+            </li>
+          </ul>
+        </div>
+        <script src="./js/btn.js"></script>
+      </nav>
+    </div>
+    <!-- main  -->
+    <div
+      id="topmain"
+      class="relative top-9 mt-1 pt-16 pb-32 flex content-center items-center justify-center mb-10"
+      style="min-height: 80vh"
+    >
+      <div
+        class="bg-main absolute top-0 w-full h-full bg-center bg-cover"
+        style="background-image: url('./img/bg.jpg')"
+      >
+        <span
+          id="blackOverlay"
+          class="bg-main w-full h-full absolute opacity-50 bg-black"
+        ></span>
+      </div>
+      <div class="container relative mx-auto">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+            <div class="px-1">
+              <h1
+                id="font-comic"
+                class="mt-4 text-2xl text-gray-300 text-center"
+              >
+                <p id="text-ketik1">Selamat Datang di Web Profile</p>
+              </h1>
+              <h1 id="tkit">
+                <p id="text-ketik2" class="text-white font-semibold text-5xl">
+                  TKIT Nurul Jannah
+                </p>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+        style="height: 70px"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="svg-color fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+    </div>
+    <!-- section organization chart -->
+    <section class="py-10">
+      <div class="items-center mx-auto sm:w-full md:w-11/12">
+        <div data-aos="fade-down" class="mx-auto text-center py-4 px-8">
+          <h1 id="font-add" class="text-3xl">Struktur Organisasi</h1>
+        </div>
+        <div data-aos="fade-up" class="mx-auto rounded w-4/5">
+          <img
+            class="rounded"
+            src="./img/strukturorg.png"
+            alt="struktur organisasi"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- main-content -->
+    <section class="relative py-20">
+      <div class="items-center flex flex-wrap mx-auto">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="500"
+          class="mx-auto text-center py-4 pt-7"
+        >
+          <p id="font-add" class="text-3xl">Identitas Sekolah</p>
+        </div>
+        <div id="font-add" class="relative mx-auto w-11/12">
+          <table
+            data-aos="fade-up"
+            data-aos-duration="500"
+            class="w-fit mx-auto font-profile md:text-xl text-left text-gray-900"
+          >
+            <tbody class="text-left bg-pink-300 border-pink-200">
+              <tr>
+                <th
+                  scope="row"
+                  class="p-2 font-medium whitespace-normal rounded-tl-md"
+                >
+                  NPSN
+                </th>
+                <td class="md:p-2 rounded-tr-md">: 69825856</td>
+              </tr>
+              <tr>
+                <th scope="row" class="p-2 font-medium whitespace-normal">
+                  Akreditasi
+                </th>
+                <td class="md:p-2">: B</td>
+              </tr>
+              <tr>
+                <th scope="row" class="p-2 font-medium whitespace-normal">
+                  Kurikulum
+                </th>
+                <td class="md:p-2">: Kurikulum 2013</td>
+              </tr>
+              <tr>
+                <th scope="row" class="p-2 font-medium whitespace-normal">
+                  Status
+                </th>
+                <td class="md:p-2">: Swasta</td>
+              </tr>
+              <tr>
+                <th scope="row" class="p-2 font-medium whitespace-normal">
+                  Bentuk Pendidikan
+                </th>
+                <td class="md:p-2">: TK</td>
+              </tr>
+              <tr>
+                <th scope="row" class="p-2 font-medium whitespace-normal">
+                  Status Kepemilikan
+                </th>
+                <td class="md:p-2">: Yayasan</td>
+              </tr>
+              <tr>
+                <th scope="row" class="p-2 font-medium whitespace-normal">
+                  SK Pendirian Sekolah
+                </th>
+                <td class="md:p-2">: 004/YANURJANSI/IV/2006</td>
+              </tr>
+              <tr>
+                <th scope="row" class="p-2 font-medium whitespace-normal">
+                  Tanggal SK Pendirian
+                </th>
+                <td class="md:p-2">: 2006-04-21</td>
+              </tr>
+              <tr>
+                <th scope="row" class="p-2 font-medium whitespace-normal">
+                  SK Izin Operasional
+                </th>
+                <td class="md:p-2">: 503.15/107-XII/SK-TK/BPPT/2011</td>
+              </tr>
+              <tr>
+                <th
+                  scope="row"
+                  class="p-2 font-medium whitespace-normal rounded-bl-md"
+                >
+                  Tanggal SK Izin Operasional
+                </th>
+                <td class="md:p-2 rounded-br-md">: 2011-12-13</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="font-add" class="relative mx-auto w-11/12 pt-10">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="500"
+          class="mx-auto text-center py-4 pt-7"
+        >
+          <p id="font-add" class="text-3xl">Data Pelengkap</p>
+        </div>
+        <table
+          data-aos="fade-up"
+          data-aos-duration="500"
+          class="w-fit mx-auto font-profile md:text-xl text-left text-gray-900"
+        >
+          <tbody class="text-left bg-pink-300 border-pink-200">
+            <tr>
+              <th
+                scope="row"
+                class="p-2 font-medium whitespace-nowrap rounded-tl-md"
+              >
+                Kebutuhan Khusus Dilayani
+              </th>
+              <td class="md:p-2 rounded-tr-md">: Tidak ada</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-2 font-medium whitespace-nowrap">
+                Nama Bank
+              </th>
+              <td class="md:p-2">: BPD JABAR BANTEN</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-2 font-medium whitespace-nowrap">
+                Cabang KCP/Unit
+              </th>
+              <td class="md:p-2">: CABANG CIKARANG</td>
+            </tr>
+            <tr>
+              <th
+                scope="row"
+                class="p-2 font-medium whitespace-nowrap rounded-bl-md"
+              >
+                Rekening Atas Nama
+              </th>
+              <td class="md:p-2 rounded-br-md">
+                : 69825856 TKIT. NURUL JANNAH
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="font-add" class="relative mx-auto w-11/12 pt-10">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="500"
+          class="mx-auto text-center py-4 pt-7"
+        >
+          <p id="font-add" class="text-3xl">Data Rinci</p>
+        </div>
+        <table
+          data-aos="fade-up"
+          data-aos-duration="500"
+          class="w-fit mx-auto font-profile md:text-xl text-left text-gray-900"
+        >
+          <tbody class="text-left bg-pink-300 border-pink-200">
+            <tr>
+              <th
+                scope="row"
+                class="p-2 font-medium whitespace-nowrap rounded-tl-md"
+              >
+                Status BOS
+              </th>
+              <td class="md:p-2 rounded-tr-md">: Bersedia Menerima</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-2 font-medium whitespace-nowrap">
+                Waku Penyelenggaraan
+              </th>
+              <td class="md:p-2">: Pagi</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-2 font-medium whitespace-nowrap">
+                Sertifikasi ISO
+              </th>
+              <td class="md:p-2">: Belum Bersertifikat</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-2 font-medium whitespace-nowrap">
+                Sumber Listrik
+              </th>
+              <td class="md:p-2">: PLN</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-2 font-medium whitespace-nowrap">
+                Daya Listrik
+              </th>
+              <td class="md:p-2">: 1300</td>
+            </tr>
+            <tr>
+              <th
+                scope="row"
+                class="p-2 font-medium whitespace-nowrap rounded-bl-md"
+              >
+                Rekening Atas Nama
+              </th>
+              <td class="md:p-2 rounded-br-md">
+                : 69825856 TKIT. NURUL JANNAH
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="items-center mx-auto w-4/5 pt-10">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="500"
+          class="mx-auto text-center py-4 pt-7"
+        >
+          <p id="font-add" class="text-3xl">Data PTK dan PD</p>
+          <div>
+            <!-- dropdown -->
+            <div class="">
+              <div id="font-add" class="dropdown inline-block relative">
+                <button
+                  class="bg-pink-300 font-semibold rounded inline-flex items-center"
+                >
+                  <p id="tahun-ajaran" class="text-xl p-1">
+                    Semester 2022/2023 Ganjil
+                  </p>
+                </button>
+                <ul
+                  class="dropdown-menu absolute hidden pt-1 text-left text-white text-sm cursor-pointer shadow-lg"
+                >
+                  <li
+                    class="bg-pink-500 rounded-t hover:bg-white hover:text-gray-700"
+                  >
+                    <a
+                      onclick="changeData(0,2,2,0,2,2,0,4,4,9,21,30,'Semester 2022/2023 Ganjil')"
+                      class="py-2 px-4 block whitespace-no-wrap"
+                      >Semester 2022/2023 Ganjil</a
+                    >
+                  </li>
+                  <li class="bg-pink-500 hover:bg-white hover:text-gray-700">
+                    <a
+                      onclick="changeData(0,2,2,0,2,2,0,4,4,14,21,35,'Semester 2021/2022 Genap')"
+                      class="py-2 px-4 block whitespace-no-wrap"
+                      >Semester 2021/2022 Genap</a
+                    >
+                  </li>
+                  <li class="bg-pink-500 hover:bg-white hover:text-gray-700">
+                    <a
+                      onclick="changeData(0,3,3,0,2,2,0,5,5,14,21,35,'Semester 2021/2022 Ganjil')"
+                      class="py-2 px-4 block whitespace-no-wrap"
+                      >Semester 2021/2022 Ganjil</a
+                    >
+                  </li>
+                  <li class="bg-pink-500 hover:bg-white hover:text-gray-700">
+                    <a
+                      onclick="changeData(0,3,3,0,2,2,0,5,5,3,5,8,'Semester 2020/2021 Genap')"
+                      class="py-2 px-4 block whitespace-no-wrap"
+                      >Semester 2020/2021 Genap</a
+                    >
+                  </li>
+                  <li
+                    class="bg-pink-500 rounded-b hover:bg-white hover:text-gray-700"
+                  >
+                    <a
+                      onclick="changeData(0,3,3,0,2,2,0,5,5,19,17,36,'Semester 2020/2021 Ganjil')"
+                      class="py-2 px-4 block whitespace-no-wrap"
+                      >Semester 2020/2021 Ganjil</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- end dropdown -->
+          </div>
+        </div>
+
+        <div id="font-add" class="relative">
+          <table
+            data-aos="fade-up"
+            data-aos-duration="500"
+            class="w-full text-sm md:text-xl text-left text-gray-700"
+          >
+            <thead
+              class="text-center text-black font-extrabold bg-pink-300 rounded-tl-lg"
+            >
+              <tr>
+                <th scope="col" class="p-2 text-left rounded-tl-lg">Uraian</th>
+                <th scope="col" class="p-2">Guru</th>
+                <th scope="col" class="p-2">Tendik</th>
+                <th scope="col" class="p-2">PTK</th>
+                <th scope="col" class="p-2 rounded-tr-lg">PD</th>
+              </tr>
+            </thead>
+            <tbody class="text-center bg-pink-50 border-pink-200">
+              <tr class="border-b border-pink-200">
+                <th scope="row" class="p-2 text-left whitespace-nowrap">
+                  Laki-laki
+                </th>
+                <td id="num-guru" class="p-2">0</td>
+                <td id="num-tendik" class="p-2">0</td>
+                <td id="num-ptk" class="p-2">0</td>
+                <td id="num-pd" class="p-2">9</td>
+              </tr>
+              <tr class="border-b border-pink-200">
+                <th scope="row" class="p-2 text-left whitespace-nowrap">
+                  Perempuan
+                </th>
+                <td id="num-guru2" class="p-2">2</td>
+                <td id="num-tendik2" class="p-2">2</td>
+                <td id="num-ptk2" class="p-2">4</td>
+                <td id="num-pd2" class="p-2">21</td>
+              </tr>
+              <tr class="text-black font-extrabold">
+                <th
+                  scope="row"
+                  class="py-4 px-2 text-left whitespace-nowrap rounded-bl-lg"
+                >
+                  Total
+                </th>
+                <td id="total-guru" class="py-4 px-2">2</td>
+                <td id="total-tendik" class="py-4 px-2">2</td>
+                <td id="total-ptk" class="py-4 px-2">4</td>
+                <td id="total-pd" class="py-4 px-2 rounded-br-lg">30</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="500"
+          id="font-add"
+          class="p-2 mt-4 text-sm md:text-xl text-left"
+        >
+          <h1>Keterangan :</h1>
+          <ul class="pl-7">
+            <li class="list-disc">
+              <p>Data Rekap Per Tanggal 19 Desember 2022</p>
+            </li>
+            <li class="list-disc">
+              <p>
+                Penghitungan PTK adalah yang sudah mendapat penugasan, berstatus
+                aktif dan terdaftar di sekolah induk.
+              </p>
+            </li>
+            <li class="list-disc">
+              <p>Singkatan :</p>
+              <ul class="pl-7">
+                <li class="list-decimal">
+                  <p>PTK = Guru ditambah Tendik</p>
+                </li>
+                <li class="list-decimal">
+                  <p>PD = Peserta Didik</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- end section -->
+
+    <!-- section footer  -->
+    <section class="footer">
+      <footer class="bg-gray-100 text-center lg:text-left">
+        <div id="font-add" class="container p-6 text-gray-900 mx-auto">
+          <div
+            id="font-comic"
+            class="grid lg:grid-cols-2 gap-2 text-sm md:text-xl"
+          >
+            <table class="w-full flex mb-2 text-left">
+              <tbody class="border-none text-left">
+                <tr>
+                  <th class="col-span-2">
+                    <h5 class="font-medium px-2 mb-2">Kontak</h5>
+                  </th>
+                </tr>
+                <tr class="">
+                  <th scope="row" class="px-2 font-medium whitespace-nowrap">
+                    Fax
+                  </th>
+                  <td class="px-2">: 02189106417</td>
+                </tr>
+                <tr class="">
+                  <th scope="row" class="px-2 font-medium whitespace-nowrap">
+                    Telepon
+                  </th>
+                  <td class="px-2">: 0218900167</td>
+                </tr>
+                <tr class="">
+                  <th scope="row" class="px-2 font-medium whitespace-nowrap">
+                    Email
+                  </th>
+                  <td class="px-2">: yanurjansitkit@gmail.com</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="md:mb-0 text-left">
+              <h5 class="font-medium px-2 mb-2">Alamat</h5>
+              <p class="px-2">
+                Perum Telaga Murni Blok C 25 No.23, RT. 05 RW. 05, Kel.
+                Telagamurni, Kec. Cikarang Barat, Kab. Bekasi, Prov. Jawa Barat
+                17530
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="text-center text-gray-700 p-1"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          Powered by
+          <a class="text-gray-800" href="https://github.com/ozilpr">ozilpr</a>
+        </div>
+      </footer>
+    </section>
+    <!-- end section -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/dropdown.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

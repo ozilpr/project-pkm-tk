@@ -10,12 +10,12 @@ function ketik() {
   if (i < text.length) {
     document.getElementById("text-ketik1").innerHTML += text.charAt(i);
     i++;
-    setTimeout(ketik, 70);
+    setTimeout(ketik, 30);
   } else if ((i) => text.length) {
     if (j < text2.length) {
       document.getElementById("text-ketik2").innerHTML += text2.charAt(j);
       j++;
-      setTimeout(ketik, 70);
+      setTimeout(ketik, 30);
     }
   }
 }
